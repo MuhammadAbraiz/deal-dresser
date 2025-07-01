@@ -6,6 +6,7 @@ const categories = [
   { id: "dresses", name: "Dresses", emoji: "👗" },
   { id: "outerwear", name: "Outerwear", emoji: "🧥" },
   { id: "footwear", name: "Footwear", emoji: "👟" },
+  { id: "sets", name: "Sets", emoji: "👔" },
 ];
 
 interface CategoryFilterProps {
