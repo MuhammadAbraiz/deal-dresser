@@ -1,24 +1,26 @@
-# Welcome to your Lovable project
+# Deal Dresser - Fashion E-commerce Platform
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/69cc9f02-3e36-4d6b-b929-8bc1b71a9baf
+**Deal Dresser** is a premium fashion e-commerce platform that helps users discover and shop for clothing products that fit their style, budget, and preferences. The app provides a user-friendly interface for browsing and filtering products, making it easy for users to find what they're looking for.
+
+### Key Features
+
+- **Style Filter**: Users can select their preferred style (Eastern or Western) to view relevant products
+- **Product Filtering**: Filter products based on category, price range, and brand
+- **Product Display**: Products displayed in a grid view with trending percentages
+- **Wishlist and Cart**: Add products to wishlist or cart with separate sections
+- **Theme Switching**: Switch between light and dark themes
+- **Mobile-First Design**: Optimized for mobile shopping experience
+
+### Target Audience
+
+- **Demographics**: Women and men of all ages interested in fashion and shopping
+- **Psychographics**: Individuals who value style, convenience, and affordability
 
 ## How can I edit this code?
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/69cc9f02-3e36-4d6b-b929-8bc1b71a9baf) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+You can work locally using your own IDE. The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 Follow these steps:
 
@@ -54,20 +56,18 @@ npm run dev
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Vite** - Fast build tool and development server
+- **TypeScript** - Type-safe JavaScript
+- **React** - UI library for building user interfaces
+- **shadcn-ui** - Beautiful and accessible UI components
+- **Tailwind CSS** - Utility-first CSS framework
+- **React Router** - Client-side routing
+- **Lucide React** - Beautiful icon library
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/69cc9f02-3e36-4d6b-b929-8bc1b71a9baf) and click on Share -> Publish.
+You can deploy this project using your preferred hosting provider (Vercel, Netlify, etc.) or GitHub Pages.
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain?
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Yes, you can! Most hosting providers allow you to connect a custom domain. Please refer to your hosting provider's documentation for instructions.

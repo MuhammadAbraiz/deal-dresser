@@ -1,5 +1,4 @@
-
-import { TrendingUp, Fire, Star } from "lucide-react";
+import { TrendingUp, Flame, Star } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export function TrendingBanner() {
@@ -16,14 +15,14 @@ export function TrendingBanner() {
         <div className="inline-flex items-center gap-8">
           {trendingItems.map((item, index) => (
             <div key={index} className="inline-flex items-center gap-2">
-              <Fire size={16} className="text-yellow-300" />
+              <Flame size={16} className="text-yellow-300" />
               <span className="font-medium text-sm">{item}</span>
             </div>
           ))}
           {/* Duplicate for seamless loop */}
           {trendingItems.map((item, index) => (
             <div key={`duplicate-${index}`} className="inline-flex items-center gap-2">
-              <Fire size={16} className="text-yellow-300" />
+              <Flame size={16} className="text-yellow-300" />
               <span className="font-medium text-sm">{item}</span>
             </div>
           ))}
