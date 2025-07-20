@@ -1,4 +1,4 @@
-# Deal Dresser - Fashion E-commerce Platform
+# Deal Dresser - Fashion E-commerce Platform 
 
 ## Project Overview
 
@@ -73,4 +73,5 @@ You can deploy this project using your preferred hosting provider (Vercel, Netli
 Yes, you can! Most hosting providers allow you to connect a custom domain. Please refer to your hosting provider's documentation for instructions.
 
 ---
+*This is a test commit to trigger the CI/CD pipeline.*
 *This is a test commit to trigger the CI/CD pipeline.*
