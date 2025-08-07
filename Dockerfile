@@ -1,29 +1,29 @@
-# Use the official Node.js 20 image as a parent image
+# Stage 1: Build the application
 FROM node:20-alpine AS builder
 
-# Set the working directory
+# Set working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json
+# Copy package manifests and install dependencies
 COPY package*.json ./
-
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application source code
+# Copy source and build
 COPY . .
-
-# Build the project
 RUN npm run build
 
-# Use the official Nginx image to serve the static files
+# Stage 2: Serve with Nginx
 FROM nginx:stable-alpine
 
-# Copy the built assets from the builder stage
+# Copy built assets
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Expose port 80
+# Pre-create & open-perm nginx cache and run dirs for non-root UIDs
+RUN mkdir -p /var/cache/nginx/client_temp /var/run/nginx \
+    && chmod -R 0777 /var/cache/nginx /var/run/nginx
+
+# Expose HTTP port
 EXPOSE 80
 
-# Start Nginx when the container launches
+# Launch Nginx in the foreground
 CMD ["nginx", "-g", "daemon off;"]
